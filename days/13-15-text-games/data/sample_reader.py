@@ -1,7 +1,7 @@
 import csv 
 
 def read_rolls():
-    with open('battle-table.csv') as fin:
+    with open('data/battle-table.csv') as fin:
         reader = csv.DictReader(fin)
         for row in reader:
             read_roll(row)
